@@ -1,0 +1,149 @@
+/* Import a clean, modern font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5; /* Light grayish-blue background */
+  color: #333;
+}
+
+/* Main Card Container */
+.container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+
+/* Amount Input Section */
+.amount p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.amount input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.amount input:focus {
+  border-color: #6366f1; /* Indigo focus color */
+}
+
+/* Dropdown Section */
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; /* Aligns the selects evenly even if one has a <p> label */
+  margin-top: 1.5rem;
+}
+
+.from p, .to p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.select-container:hover {
+  background-color: #f1f1f1;
+}
+
+.select-container img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.select-container select {
+  font-size: 1rem;
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Swap Icon */
+.dropdown > i {
+  font-size: 1.2rem;
+  color: #666;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 5px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.dropdown > i:hover {
+  color: #6366f1;
+  transform: scale(1.1);
+}
+
+/* Message Section */
+.msg {
+  margin: 1.5rem 0;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #444;
+}
+
+/* Exchange Button */
+.Exchange {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #6366f1; /* Indigo button */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.Exchange:hover {
+  background-color: #4f46e5;
+}
+
+.Exchange:active {
+  transform: scale(0.98); /* Slight click effect */
+}
